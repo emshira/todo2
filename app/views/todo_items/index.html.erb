@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>MIA Radiology</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><h2>PROVIDING ACCURATE DIAGNOSES AND TREATMENT THROUGH
+MEDICAL IMAGING EXCELLENCE.<h2></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_items.each do |todo_item| %>
+      <tr>
+        <td><%= todo_item.description %></td>
+        <td><%= link_to 'Physicians', todo_item, class:"fa fa-user-md", class:'btn btn-info' %></td>
+        <td><%= link_to 'Procedures', edit_todo_item_path(todo_item), class:"fa fa-plus-square", class:'btn btn-warning' %></td>
+        <td><%= link_to 'Schedule Appointment', todo_item, method: :delete, data: { confirm: 'Are you sure?' }, class:"fa fa-address-card-o", class:'btn btn-primary' %></td>
+        <td><%= link_to 'Location', todo_item, class:"fa fa-map-marker", class:'btn btn-danger' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo Item', new_todo_item_path %>
