@@ -4,9 +4,11 @@ Basic rails app, practice with Scaffold, routes, link_to, basic CRUD operations,
 
 User is able to: create a new todo, see a list of todos, view/show, edit, and destroy/delete todos.
 
-===============
-Ruby version 2.4.2
-Rails version 5.1.5
+================
+
+Ruby 2.4.2
+Rails 5.1.5
+
 ====================
 
 Technology used:
