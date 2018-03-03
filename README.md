@@ -17,4 +17,4 @@ Ruby, Ruby on Rails, html, css, bootstrap, Git, Heroku
 
 ===========
 
-Deployment: used Heroku, website: https://github.com/emshira/todo2.git
+Deployment: used Heroku, website: https://mysterious-sea-78215.herokuapp.com/
